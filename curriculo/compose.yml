@@ -6,4 +6,4 @@ services:
     ports:
     - '80:80'
     volumes:
-    - ./curriculo:/usr/local/apache2/htdocs
+    - ./template:/usr/local/apache2/htdocs
