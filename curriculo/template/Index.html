@@ -128,6 +128,20 @@
   <footer class="footer">
     <p>Feito por Aline Torres</p>
   </footer>
-  <script src="Script.js"></script>
+  <script>
+    const cards = document.querySelector ('.projectCard');
+    let hasFlippedCard = false;
+    let selectedCard;
+
+    cards.addEventListener('click', flipCard)
+
+    function flipCard() {
+
+        this.classList.add('flip');
+        selectedCard = this;
+        return;
+
+    }
+  </script>
 </body>
 </html>
