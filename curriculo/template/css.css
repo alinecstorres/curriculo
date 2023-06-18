@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+body {
+    background: rgba(0, 0, 0, 0.29);
+    background-size: 100%;
+    font-family: 'Odibee Sans', sans-serif;
+}
+
+/* NAV */
+.navbar {
+    position: fixed;
+    display: block;
+}
+
+.offcanvas-body {
+    text-align: center;
+}
+.nav-item {
+    font-size: xx-large;
+}
+
+/* HEADER */
+
+.header-wrapper {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(-45deg, #E6E6FA, rgb(121, 46, 123), rgb(141, 66, 143), gray);
+    background-size: 400% 400%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: backgroundTransition 8s ease-in-out infinite;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  @keyframes backgroundTransition {
+    0% {
+      background-position: 0% 80%;
+    }
+    50% {
+      background-position: 80% 100%;
+    }
+    100% {
+      background-position: 0% 90%;
+    }
+  }
+
+.about {
+    padding: 5%;
+    text-align: justify;
+}
+
+/* 
+content
+*/
+.bi {
+    color: rgb(33, 37, 41);
+    font-size: xx-large;
+    margin: 5px;
+}
+
+.content {
+    padding: 5%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+   
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+@media only screen and (max-device-width: 900px) {  
+  .col-6 {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .col-4 {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .col-8 {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+.row {
+    margin-top: 30px;
+}
+
+  /*
+ * Footer
+ */
+.layout-footer {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	height: 50px;
+}
+
+.footer-copy {
+	font-size: 92%;
+	display: block;
+	color: #777777;
+	text-align: center;
+}
